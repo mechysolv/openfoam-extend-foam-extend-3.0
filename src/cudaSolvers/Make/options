@@ -1,5 +1,7 @@
 EXE_INC = \
-    -I$(CUDA_INCLUDE_DIR)
+    -I$(CUDA_INCLUDE_DIR)\
+	-I$(WM_THIRD_PARTY_DIR)/LocalDev/cusplibrary/ \
 
 LIB_LIBS = \
     -L$(CUDA_LIB_DIR) -lcudart
+    

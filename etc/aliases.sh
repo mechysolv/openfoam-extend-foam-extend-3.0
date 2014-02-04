@@ -56,5 +56,6 @@ alias util='cd $FOAM_UTILITIES'
 alias sol='cd $FOAM_SOLVERS'
 alias tut='cd $FOAM_TUTORIALS'
 alias foam3rdParty='cd $WM_THIRD_PARTY_DIR'
-
+export PATH=$HOME/foam/foam-extend-3.0/linuxAMD64/binutils-2.20.90/bin:$PATH
+alias  cusp=$WM_THIRD_PARTY_DIR/LocalDev/cusplibrary/cusp/
 # -----------------------------------------------------------------------------

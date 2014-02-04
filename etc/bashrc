@@ -53,6 +53,9 @@ foamInstall=$HOME/$WM_PROJECT
 # foamInstall=/usr/lib
 #
 # END OF (NORMAL) USER EDITABLE PART
+module load cuda/5.5
+module unload openmpi/1.6.5 
+export PATH=$HOME/foam/foam-extend-3.0/linuxAMD64/binutils-2.20.90/bin:$PATH
 ################################################################################
 
 # note the location for later use (eg, in job scripts)

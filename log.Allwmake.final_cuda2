@@ -1,0 +1,590 @@
+make: Nothing to be done for `all'.
++ wmakePrintBuild -check
+same version as previous build
++ wmakeLnInclude foam
++ wmakeLnInclude meshTools
++ wmakeLnInclude OSspecific/POSIX
++ Pstream/Allwmake
++ wmake libso dummy
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/dummy/libPstream.so' is up to date.
++ case "$WM_MPLIB" in
++ set +x
+
+Note: ignore spurious warnings about missing mpicxx.h headers
++ WM_OPTIONS=linux64Gcc44DPOptOPENMPI
++ wmake libso mpi
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/openmpi-1.4.3/libPstream.so' is up to date.
++ wmake libo OSspecific/POSIX
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libOSspecific.o' is up to date.
++ wmake libso foam
+SOURCE=global/global.Cver ; sed -e 's/VERSION_STRING/3.0/' -e 's/BUILD_STRING/3.0-83767105dac9/' $SOURCE > Make/linux64Gcc44DPOpt/global.C; g++ -m64 -Dlinux64 -DWM_DP -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Wnon-virtual-dtor -O3  -DNoRepository -ftemplate-depth-200 -I/home/krishna/foam/foam-extend-3.0/ThirdParty/zlib-1.2.3 -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -fPIC -c Make/linux64Gcc44DPOpt/global.C -o Make/linux64Gcc44DPOpt/global.o
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libfoam.so' is up to date.
++ decompositionMethods/AllwmakeLnInclude
++ wmakeLnInclude decompositionMethods
++ wmakeLnInclude metisDecomp
++ wmakeLnInclude parMetisDecomp
++ wmakeLnInclude scotchDecomp
++ decompositionMethods/Allwmake
++ wmakeLnInclude decompositionMethods
++ wmake libso scotchDecomp
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libscotchDecomp.so' is up to date.
++ wmake libso metisDecomp
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libmetisDecomp.so' is up to date.
++ wmake libso parMetisDecomp
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/openmpi-1.4.3/libparMetisDecomp.so' is up to date.
++ wmake libso decompositionMethods
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libdecompositionMethods.so' is up to date.
++ wmake libso lagrangian/basic
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/liblagrangian.so' is up to date.
++ wmake libso triSurface
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libtriSurface.so' is up to date.
++ wmake libso edgeMesh
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libedgeMesh.so' is up to date.
++ wmake libso surfMesh
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsurfMesh.so' is up to date.
++ wmake libso meshTools
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libmeshTools.so' is up to date.
++ wmake libso finiteVolume
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libfiniteVolume.so' is up to date.
++ wmake libso finiteArea
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libfiniteArea.so' is up to date.
++ wmake libso lduSolvers
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/liblduSolvers.so' is up to date.
++ wmake libso VectorN
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libVectorN.so' is up to date.
++ wmake libso tetFiniteElement
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libtetFiniteElement.so' is up to date.
++ dynamicMesh/AllwmakeLnInclude
++ wmakeLnInclude dynamicMesh
++ wmakeLnInclude dynamicFvMesh
++ wmakeLnInclude topoChangerFvMesh
++ meshMotion/AllwmakeLnInclude
++ wmakeLnInclude solidBodyMotion
++ wmakeLnInclude fvMotionSolver
++ wmakeLnInclude RBFMotionSolver
++ wmakeLnInclude mesquiteMotionSolver
++ dynamicMesh/Allwmake
++ wmake libso dynamicMesh
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libdynamicMesh.so' is up to date.
++ meshMotion/Allwmake
++ wmake libso solidBodyMotion
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsolidBodyMotion.so' is up to date.
++ wmake libso fvMotionSolver
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libfvMotionSolver.so' is up to date.
++ wmake libso RBFMotionSolver
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libRBFMotionSolver.so' is up to date.
++ wmake libso mesquiteMotionSolver
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libmesquiteMotionSolver.so' is up to date.
++ wmake libso tetMotionSolver
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libtetMotionSolver.so' is up to date.
++ wmake libso dynamicFvMesh
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libdynamicFvMesh.so' is up to date.
++ wmake libso topoChangerFvMesh
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libtopoChangerFvMesh.so' is up to date.
++ wmake libso coupledMatrix
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libcoupledLduMatrix.so' is up to date.
++ wmake libso sampling
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsampling.so' is up to date.
++ wmake libso ODE
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libODE.so' is up to date.
++ wmake libso POD
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libPOD.so' is up to date.
++ wmake libso randomProcesses
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/librandomProcesses.so' is up to date.
++ thermophysicalModels/Allwmake
++ wmake libso specie
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libspecie.so' is up to date.
++ wmake libso thermophysicalFunctions
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libthermophysicalFunctions.so' is up to date.
++ wmake libso liquids
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libliquids.so' is up to date.
++ wmake libso liquidMixture
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libliquidMixture.so' is up to date.
++ wmake libso solids
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsolids.so' is up to date.
++ wmake libso solidMixture
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsolidMixture.so' is up to date.
++ wmake libso basic
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libbasicThermophysicalModels.so' is up to date.
++ wmake libso reactionThermo
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libreactionThermophysicalModels.so' is up to date.
++ wmake libso laminarFlameSpeed
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/liblaminarFlameSpeedModels.so' is up to date.
++ wmake libso chemistryModel
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libchemistryModel.so' is up to date.
++ wmake libso pdfs
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libpdf.so' is up to date.
++ wmake libso radiation
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libradiation.so' is up to date.
++ wmake libso barotropicCompressibilityModel
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libbarotropicCompressibilityModel.so' is up to date.
++ transportModels/Allwmake
++ wmake libso incompressible
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libincompressibleTransportModels.so' is up to date.
++ wmake libso interfaceProperties
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libinterfaceProperties.so' is up to date.
++ wmake libso viscoelastic
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libviscoelasticTransportModels.so' is up to date.
++ turbulenceModels/Allwmake
++ LES/Allwmake
++ wmakeLnInclude ../incompressible/LES
++ wmake libso LESfilters
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libLESfilters.so' is up to date.
++ wmake libso LESdeltas
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libLESdeltas.so' is up to date.
++ incompressible/Allwmake
++ wmake libso turbulenceModel
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libincompressibleTurbulenceModel.so' is up to date.
++ wmake libso RAS
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libincompressibleRASModels.so' is up to date.
++ wmake libso LES
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libincompressibleLESModels.so' is up to date.
++ compressible/Allwmake
++ wmake libso turbulenceModel
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libcompressibleTurbulenceModel.so' is up to date.
++ wmake libso RAS
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libcompressibleRASModels.so' is up to date.
++ wmake libso LES
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libcompressibleLESModels.so' is up to date.
++ lagrangian/Allwmake
++ wmake libso basic
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/liblagrangian.so' is up to date.
++ wmake libso solidParticle
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsolidParticle.so' is up to date.
++ wmake libso intermediate
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/liblagrangianIntermediate.so' is up to date.
++ wmake libso dieselSpray
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libdieselSpray.so' is up to date.
++ wmake libso dsmc
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libdsmc.so' is up to date.
++ wmake libso coalCombustion
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libcoalCombustion.so' is up to date.
++ molecularDynamics/Allwmake
++ wmake libso potential
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libpotential.so' is up to date.
++ wmake libso molecularMeasurements
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libmolecularMeasurements.so' is up to date.
++ wmake libso molecule
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libmolecule.so' is up to date.
++ postProcessing/Allwmake
++ wmake libo postCalc
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/postCalc.o' is up to date.
++ wmake libso foamCalcFunctions
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libfoamCalcFunctions.so' is up to date.
++ functionObjects/Allwmake
++ wmake libso check
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libcheckFunctionObjects.so' is up to date.
++ wmake libso field
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libfieldFunctionObjects.so' is up to date.
++ wmake libso forces
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libforces.so' is up to date.
++ wmake libso IO
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libIOFunctionObjects.so' is up to date.
++ wmake libso utilities
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libutilityFunctionObjects.so' is up to date.
++ wmake libso systemCall
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsystemCall.so' is up to date.
++ conversion/Allwmake
++ wmake libso
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libconversion.so' is up to date.
++ wmake libso autoMesh
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libautoMesh.so' is up to date.
++ wmake libso errorEstimation
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/liberrorEstimation.so' is up to date.
++ fvAgglomerationMethods/Allwmake
++ wmake libso MGridGenGamgAgglomeration
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libMGridGenGAMGAgglomeration.so' is up to date.
++ wmake libso engine
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libengine.so' is up to date.
++ wmake libso equationReader
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libequationReader.so' is up to date.
++ wmake libso multiSolver
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libmultiSolver.so' is up to date.
++ wmake libso solidModels
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libsolidModels.so' is up to date.
++ cd cudaSolvers
++ ./Allwmake
+Found nvcc  --  enabling CUDA support.
+SOURCE=cudaCG/cgDiag.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/  -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/cgDiag.o
+SOURCE=cudaCG/cgAmg.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/  -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/cgAmg.o
+SOURCE=cudaBiCGStab/bicgDiag.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/  -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/bicgDiag.o
+SOURCE=cudaCG/cgAinv.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/  -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/cgAinv.o
+SOURCE=cudaBiCGStab/bicgAinv.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/  -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/bicgAinv.o
+cudaBiCGStab/bicgDiag.cu:1:1: error: unterminated comment
+cudaCG/cgAmg.cu:1:1: error: unterminated comment
+make: *** [Make/linux64Gcc44DPOpt/bicgDiag.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Make/linux64Gcc44DPOpt/cgAmg.o] Error 1
+In file included from cudaCG/cgDiag.cu:68:
+lnInclude/fillCOOMatrix.H:1:1: error: unterminated comment
+In file included from cudaCG/cgDiag.cu:97:
+lnInclude/buildNormFactor.H:1:1: error: unterminated comment
+In file included from cudaBiCGStab/bicgAinv.cu:133:
+lnInclude/buildNormFactor.H:1:1: error: unterminated comment
+In file included from cudaCG/cgAinv.cu:72:
+lnInclude/fillCOOMatrix.H:1:1: error: unterminated comment
+In file included from cudaCG/cgAinv.cu:108:
+lnInclude/buildNormFactor.H:1:1: error: unterminated comment
+make: *** [Make/linux64Gcc44DPOpt/cgDiag.o] Error 1
+make: *** [Make/linux64Gcc44DPOpt/bicgAinv.o] Error 1
+make: *** [Make/linux64Gcc44DPOpt/cgAinv.o] Error 1
++ wmake all solvers
++ wmake libso BCs
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/equationReaderDemo' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/dnsFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/PODSolver' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoDyMEngineFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/MRFSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/financialFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/electrostaticFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/blockCoupledScalarTransportFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/boussinesqBuoyantFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/PDRFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/dsmcFoam' is up to date.
++ wmake libso conjugateHeatTransfer
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/buoyantBoussinesqPisoFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/laplacianFoam' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/librhoCentralFoam.so' is up to date.
++ wmake
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/turbDyMEngineFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/boundaryFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/sonicTurbDyMEngineFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mhdFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/coalChemistryFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/conjugateHeatSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/XiFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/buoyantBoussinesqSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/potentialFoam' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libconjugateHeatTransfer.so' is up to date.
++ wmake
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoCentralFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mdEquilibrationFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/buoyantPisoFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mdFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/coldEngineFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/channelFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/buoyantSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/reactingParcelFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/porousExplicitSourceReactingParcelFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/scalarTransportFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/conjugateHeatFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoDyMFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoPimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/multiSolverDemo' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/buoyantSimpleRadiationFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/dieselEngineFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/engineFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/dieselFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/sixDOFSolver' is up to date.
++ wmake libso combustionModels
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/uncoupledKinematicParcelFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/chtMultiRegionSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/chtMultiRegionFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoPisoFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoDyMSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoPorousSimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoPorousMRFPimpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/nonNewtonianIcoFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoFoam' is up to date.
++ wmake elasticAcpSolidFoam
++ wmake surfactantFoam
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoReactingFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/pisoFoam' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libcombustionModels.so' is up to date.
++ wmake
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/reactingFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/pimpleDyMFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/pimpleFoam' is up to date.
++ wmake libso BCs
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/shallowWaterFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhoSonicFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/porousSimpleFoam' is up to date.
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticAcpSolidFoam' is up to date.
++ wmake elasticIncrAcpSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfactantFoam' is up to date.
++ wmake libso freeSurface
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/fireFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/simpleFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/sonicFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/barotropicCavitatingFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/MRFInterFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/simpleSRFFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/viscoelasticFluidFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/bubbleFoam' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/librhopSonicFoam.so' is up to date.
++ wmake
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/cavitatingFoam' is up to date.
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticIncrAcpSolidFoam' is up to date.
++ wmake elasticIncrSolidFoam
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/compressibleInterDyMFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/sonicFoamAutoMotion' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/sonicLiquidFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/compressibleInterFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/interDyMFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/interMixingFoam' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libfreeSurface.so' is up to date.
++ wmake interTrackFoam
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/interFoam' is up to date.
++ wmake libso phaseModel
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rhopSonicFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/interPhaseChangeFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/multiphaseInterFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/porousInterFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/settlingFoam' is up to date.
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticIncrSolidFoam' is up to date.
++ wmake elasticNonLinIncrTLSolidFoam
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/twoLiquidMixingFoam' is up to date.
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/interTrackFoam' is up to date.
++ wmake bubbleInterTrackFoam
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libphaseModel.so' is up to date.
++ wmake libso interfacialModels
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticNonLinIncrTLSolidFoam' is up to date.
++ wmake elasticNonLinTLSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/bubbleInterTrackFoam' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libEulerianInterfacialModels.so' is up to date.
++ wmake libso kineticTheoryModels
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticNonLinTLSolidFoam' is up to date.
++ wmake elasticNonLinULSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticNonLinULSolidFoam' is up to date.
++ wmake elasticOrthoAcpSolidFoam
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libkineticTheoryModel.so' is up to date.
++ wmake
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticOrthoAcpSolidFoam' is up to date.
++ wmake elasticOrthoNonLinULSolidFoam
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/twoPhaseEulerFoam' is up to date.
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticOrthoNonLinULSolidFoam' is up to date.
++ wmake elasticOrthoSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticOrthoSolidFoam' is up to date.
++ wmake elasticPlasticSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticPlasticSolidFoam' is up to date.
++ wmake elasticPlasticNonLinTLSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticPlasticNonLinTLSolidFoam' is up to date.
++ wmake elasticPlasticNonLinULSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticPlasticNonLinULSolidFoam' is up to date.
++ wmake elasticSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticSolidFoam' is up to date.
++ wmake elasticThermalSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/elasticThermalSolidFoam' is up to date.
++ wmake icoFsiElasticNonLinULSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoFsiElasticNonLinULSolidFoam' is up to date.
++ wmake viscoElasticSolidFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/viscoElasticSolidFoam' is up to date.
++ cd utilities
++ wmake all
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/smoothMesh' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/patchStressIntegrate' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceTractions' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/calculateCourantNumber' is up to date.
++ cd deprecatedSolvers
++ ./Allwmake
++ wmake libso materialModels
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libmaterialModels.so' is up to date.
++ wmake stressedFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/stressedFoam' is up to date.
++ wmake contactStressFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/contactStressFoam' is up to date.
++ wmake newStressedFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/newStressedFoam' is up to date.
++ wmake newContactStressFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/newContactStressFoam' is up to date.
++ wmake stressFemFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/stressFemFoam' is up to date.
++ wmake icoFsiFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoFsiFoam' is up to date.
++ wmake solidDisplacementFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/solidDisplacementFoam' is up to date.
++ wmake solidEquilibriumDisplacementFoam
+make[1]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/solidEquilibriumDisplacementFoam' is up to date.
++ wmake all utilities
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceAdd' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/expandDictionary' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/IFCLookUpTableGen' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/estimateScalarError' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/patchStressIntegrate' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/applyBoundaryLayer' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/ansysToFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/decomposePar' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/scalarSnapshots' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/autoRefineMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/testFad' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/blockMesh' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/adiabaticFlameT' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceAutoPatch' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceCheck' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoErrorEstimate' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/setMatFromCellZones' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/applyWallFunctionBoundaryConditions' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/cfx4ToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/collapseEdges' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/testFadField' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/vectorSnapshots' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/equilibriumCO' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/chemkinToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/extrude2DMesh' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceClean' is up to date.
++ wmake libso extrudeModel
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/icoMomentError' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/decomposeSets' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/fluent3DMeshToFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/boxTurb' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/momentScalarError' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/findRoot' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/equilibriumFlameT' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/combinePatchFaces' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceCoarsen' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamCalc' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libextrudeModel.so' is up to date.
++ wmake
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/fluentMeshToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamDataToFluent' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mixtureAdiabaticFlameT' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/dsmcInitialise' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamDebugSwitches' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/changeDictionary' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/simpleFoamResidual' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/reconstructPar' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceConvert' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/modifyMesh' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceFeatureConvert' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/extrudeMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamMeshToAbaqus' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamToEnsight' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamFormatConvert' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/engineSwirl' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/fluentDataToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamToFieldview9' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/refineHexMesh' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceFeatureExtract' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/redistributeMeshPar' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/reconstructParMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/makeFaMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamMeshToFluent' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamToStarMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/gambitToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/gmshToFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamInfoExec' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/refineWallLayer' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamToGMV' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceFind' is up to date.
++ '[' -d /home/krishna/Paraview-4.1.0 -a -r /home/krishna/Paraview-4.1.0 ']'
++ wmake libso tecio/tecsrc
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceMeshConvert' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mapFields' is up to date.
++ '[' -d /home/krishna/Paraview-4.1.0 -a -r /home/krishna/Paraview-4.1.0 ']'
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/snappyHexMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/attachMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/ideasUnvToFoam' is up to date.
++ '[' -d '' -a -r '' ']'
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/particleTracks' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/patchSummary' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/refinementLevel' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libtecio.so' is up to date.
++ wmake
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceMeshConvertTesting' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamToVTK' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/calcLevelSet' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/autoPatch' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/kivaToFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mdInitialise' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/checkMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/cellSet' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/removeFaces' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceMeshExport' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/checkSurfaceCurvature' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/foamToTecplot360' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libuserd-foam.so' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceMeshImport' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/dsmcFieldsCalc' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/engineCompRatio' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/setFields' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mshToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/netgenNeutralToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/selectCells' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/splitCells' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/createPatch' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/smapToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/createBaffles' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceMeshTriangulate' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceOrient' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/pdfPlot' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/execFlowFunctionObjects' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/postChannel' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/plot3dToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/polyDualMesh' is up to date.
+'/home/krishna/foam/foam-extend-3.0/lib/linux64Gcc44DPOpt/libuserd-newFoam.so' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/star4ToFoam' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/starToFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfacePointMerge' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/deformedGeom' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/sammToFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/multiSolver' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/ptot' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/wdot' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/writeCellCentres' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/patchAverage' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/deformedTetFemGeom' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceRefineRedGreen' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/faceSet' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/writeMeshObj' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/tetgenToFoam' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceRedistributePar' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceSmooth' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceSplitByPatch' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceSplitNonManifolds' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/probeLocations' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/patchIntegrate' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceSubset' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceToPatch' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/flattenMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mergeMeshes' is up to date.
+make[2]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/surfaceTransformPoints' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/sample' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/pPrime2' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/insideCells' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mirrorMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/mergeOrSplitBaffles' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/calcPTot' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/interFoamPressure' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/R' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/createTurbulenceFields' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/Co' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/Lambda2' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/Mach' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/stressDifferences' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/PSD' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/Pe' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/stressSymmComponents' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/stressComponents' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/moveDyMEngineMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/solidStress' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/objToVTK' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/moveEngineMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/moveMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/wallGradU' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/wallShearStress' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/wallHeatFlux' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/moveDynamicMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/Q' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/enstrophy' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/flowType' is up to date.
+Found readline/readline.h  --  enabling readline support.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/yPlusLES' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/uprime' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/streamFunction' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/pointSet' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/refineMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/vorticity' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/yPlusRAS' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/regionCellSets' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/renumberMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/rotateMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/setsToZones' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/setSet' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/splitMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/splitMeshRegions' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/subsetMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/zipUpMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/stitchMesh' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/transformPoints' is up to date.
+make[3]: `/home/krishna/foam/foam-extend-3.0/applications/bin/linux64Gcc44DPOpt/tetDecomposition' is up to date.

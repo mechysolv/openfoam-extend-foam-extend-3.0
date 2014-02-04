@@ -1,0 +1,16 @@
+SOURCE=cudaCG/cgAmg.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/ -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/cgAmg.o
+SOURCE=cudaCG/cgDiag.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/ -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/cgDiag.o
+SOURCE=cudaCG/cgAinv.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/ -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/cgAinv.o
+SOURCE=cudaBiCGStab/bicgDiag.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/ -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/bicgDiag.o
+SOURCE=cudaBiCGStab/bicgAinv.cu ;  nvcc -m64 -arch sm_20 -DNoRepository  -Xcompiler -fPIC -I/global/software/cuda/5.5/include	-I/home/krishna/foam/foam-extend-3.0/ThirdParty/LocalDev/cusplibrary/ -IlnInclude -I. -I/home/krishna/foam/foam-extend-3.0/src/foam/lnInclude -I/home/krishna/foam/foam-extend-3.0/src/OSspecific/POSIX/lnInclude   -Dlinux64 -DWM_DP -O3  -c $SOURCE -o Make/linux64Gcc44DPOpt/bicgAinv.o
+cudaCG/cgAmg.cu:1:1: error: unterminated comment
+cudaCG/cgDiag.cu:1:1: error: unterminated comment
+cudaCG/cgAinv.cu:1:1: error: unterminated comment
+cudaBiCGStab/bicgDiag.cu:1:1: error: unterminated comment
+cudaBiCGStab/bicgAinv.cu:1:1: error: unterminated comment
+make: *** [Make/linux64Gcc44DPOpt/cgAmg.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Make/linux64Gcc44DPOpt/cgAinv.o] Error 1
+make: *** [Make/linux64Gcc44DPOpt/cgDiag.o] Error 1
+make: *** [Make/linux64Gcc44DPOpt/bicgDiag.o] Error 1
+make: *** [Make/linux64Gcc44DPOpt/bicgAinv.o] Error 1

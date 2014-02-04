@@ -46,6 +46,7 @@ This file is part of cufflink.
 
      You should have received a copy of the GNU General Public License
      along with foam-extend.  If not, see <http://www.gnu.org/licenses/>.
+\**********************************************************************/
 
 // Fill in the rest of the diag (rows and col),
 // upper and upper.rows and upper.cols
